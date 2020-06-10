@@ -1,0 +1,33 @@
+<h1>Show Episode</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @episode.title %>
+  </li>
+
+  <li>
+    <strong>Slug:</strong>
+    <%= @episode.slug %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= @episode.content %>
+  </li>
+
+  <li>
+    <strong>Seconds long:</strong>
+    <%= @episode.seconds_long %>
+  </li>
+
+  <li>
+    <strong>Video url:</strong>
+    <%= @episode.video_url %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.episode_path(@conn, :edit, @episode) %></span>
+<span><%= link "Back", to: Routes.episode_path(@conn, :index) %></span>

@@ -1,0 +1,5 @@
+<h1>Edit Episode</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.episode_path(@conn, :update, @episode)) %>
+
+<span><%= link "Back", to: Routes.episode_path(@conn, :index) %></span>
